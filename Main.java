@@ -2,17 +2,20 @@ public class Main {
 
 	public static void main(String[] args) {
 		int otherNumber = 0; 
-		int quantidadeDeValores = 7;
+		int all=0;
 		int[] numero = { 12, 13, 8, 8, 5, 5, 4 };
-		for (int i = 0; i <= 6; i++) {
-			for (int x = 0; x <= 6; x++) {
+		for (int i = 0; i <numero.length; i++) {
+			otherNumber++;
+		}
+		for (int i = 0; i <numero.length; i++){
+			for (int x = 0; x <numero.length; x++) {
 				if (numero[i] == numero[x]) {
-					otherNumber++;
+					all++;
 				}
 			}
 		}
 		
-		int last = otherNumber-quantidadeDeValores;
+		int last = all-otherNumber;
 		System.out.println(last);
 	}
 }
